@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Juri Tuga</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Rregjistrim</h1>
+    <form name="RegForm" action="/Users\User\Desktop\j/dergo.php" onsubmit="return Juri()" method="post">
+        <p>Emri: <input type="text" size="65" name="Emri"  /></p>
+        <br />
+        <p>Adresa: <input type="text" size="65" name="Adresa"  />
+        </p>
+        <br />
+        <p>E-mail: <input type="text" size="65" name="E-Mail" /></p>
+        <br />
+        <p>Nr telefoni: <input type="text" size="65" name="NR-Telefoni" /></p>
+        <br />
+        <input type="radio" id="m" name="gjini" value="m">
+        <label for="m">Mashkull</label>
+        <input type="radio" id="f" name="gjini" value="f">
+        <label for="f">Femer</label><br/>
+       
+        <p>Keni pasur experienca ne programim:</p><br>
+        <input type="radio" id="po" name="programim" value="po">
+        <label for="po">Po</label>
+        <input type="radio" id="jo" name="gjini" value="jo">
+        <label for="jo">Jo</label><br/>
+
+        <p>Deshironi te mesoni programim:</p><br>
+        <input type="radio" id="po-1" name="programim" value="po">
+        <label for="po">Po</label>
+        <input type="radio" id="jo-1" name="gjini" value="jo">
+        <label for="jo">Jo</label><br/>
+
+        <p>Jeni njohur me pare me gjuhe programimi:</p><br>
+        <input type="radio" id="po-2" name="programim" value="po">
+        <label for="po">Po</label>
+        <input type="radio" id="jo-2" name="gjini" value="jo">
+        <label for="jo">Jo</label><br/>
+
+
+        <p>
+            Gjuha e programimit me te cilen punoni ose doni te mesoni
+            <select type="text" value="" name="Gjuha">
+                <option>Javascript</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>Tjeter</option>
+            </select>
+        </p>
+        <br />
+        <br />
+        <p>Komment: <textarea cols="55" name="Comment"> </textarea></p>
+        <p>
+            <input type="submit" value="Dergo" name="Dergo" />
+            <input type="reset" value="Fshij" name="Fshij" />
+        </p>
+    </form>
+</body>
+
+</html>
