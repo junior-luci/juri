@@ -12,7 +12,7 @@
 
 <body>
     <h1 style="text-align: center;">Rregjistrim</h1>
-    <form name="RegForm" action="/dergo.php" onsubmit="return Juri()" method="post">
+    <form name="RegForm" action="/s.php" onsubmit="return Juri()" method="post">
         <p>Emri: <input type="text" size="65" name="Emri"  /></p>
         <br />
         <p>Adresa: <input type="text" size="65" name="Adresa"  />
@@ -28,27 +28,28 @@
         <label for="f">Femer</label><br/>
        
         <p>Keni pasur experienca ne programim:</p><br>
-        <input type="radio" id="po" name="programim" value="po">
-        <label for="po">Po</label>
-        <input type="radio" id="jo" name="gjini" value="jo">
-        <label for="jo">Jo</label><br/>
+        <input type="radio" id="po" name="programim-1" value="po">
+        <label for="po1">Po</label>
+        <input type="radio" id="jo" name="programim-1" value="jo">
+        <label for="jo1">Jo</label><br/>
 
         <p>Deshironi te mesoni programim:</p><br>
-        <input type="radio" id="po-1" name="programim" value="po">
-        <label for="po">Po</label>
-        <input type="radio" id="jo-1" name="gjini" value="jo">
-        <label for="jo">Jo</label><br/>
+        <input type="radio" id="po-1" name="programim-2" value="po">
+        <label for="po2">Po</label>
+        <input type="radio" id="jo-1" name="programim-2" value="jo">
+        <label for="jo2">Jo</label><br/>
 
         <p>Jeni njohur me pare me gjuhe programimi:</p><br>
-        <input type="radio" id="po-2" name="programim" value="po">
-        <label for="po">Po</label>
-        <input type="radio" id="jo-2" name="gjini" value="jo">
-        <label for="jo">Jo</label><br/>
+        <input type="radio" id="po-2" name="programim-3" value="po">
+        <label for="po3">Po</label>
+        <input type="radio" id="jo-2" name="programim-3" value="jo">
+        <label for="jo3">Jo</label><br/>
 
 
         <p>
             Gjuha e programimit me te cilen punoni ose doni te mesoni
             <select type="text" value="" name="Gjuha">
+                <option>Gjuha..</option>
                 <option>Javascript</option>
                 <option>Python</option>
                 <option>Java</option>
@@ -63,6 +64,7 @@
             <input type="reset" value="Fshij" name="Fshij" />
         </p>
     </form>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 
 </html>

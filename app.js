@@ -53,3 +53,28 @@ function Juri() {
 
     return true; 
 } 
+
+window.onload = function Grafiku() {
+
+    var chart = new CanvasJS.Chart("grafik", {
+        animationEnabled: true,
+        title: {
+            text: "Sondazh mbi gjuhet e programimit"
+        },
+        data: [{
+            type: "pie",
+            startAngle: 360,
+            yValueFormatString: "##0.00\"%\"",
+            indexLabel: "{label} {y}",
+            dataPoints: [
+                {y: 79.45, label: "Javascript"},
+                {y: 7.31, label: "Python"},
+                {y: 7.06, label: "Java"},
+                {y: 4.91, label: "C++"},
+                {y: 1.26, label: "Tjeter"}
+            ]
+        }]
+    });
+    chart.render();
+    
+    }
